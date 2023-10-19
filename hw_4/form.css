@@ -1,0 +1,77 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    max-width: 700px;
+    width: 100%;
+    min-height: 700px;
+    height: auto;
+    background-color: #d2d2d2;
+    padding: 30px;
+}
+.radio {
+    display: flex;
+    align-items: center;
+}
+.radio div {
+    display: flex;
+}
+.radio div label h3 {
+    width: 100%;
+}
+.radio div label input {
+    width: 40px;
+    height:40px;
+}
+.radio h3 {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+label {
+    display: flex;
+    align-items: center;
+}
+label h3,input {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+select {
+    width: 50%;
+    height: 40px;
+}
+textarea {
+    width: 50%;
+    height: 120px;
+    resize: none;
+}
+.checkbox {
+    display: flex;
+
+}
+.checkbox.div {
+    width: 50%;
+}
+input[type=checkbox] {
+    height: 40px;
+    width:  40px;
+}
+.btn {
+    display:flex;
+    justify-content: center;
+    gap: 5px;
+}
+button {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

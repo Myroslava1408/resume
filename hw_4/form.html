@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link href="./form.css" rel="stylesheet">
+</head>
+<body>
+    <form action="#" method="get" name="register">
+        <label>
+            <h3>Повне ім'я</h3>
+            <input type="text" name="full_name"  required  pattern=""/>
+        </label>
+       <label>
+        <h3>Email</h3>
+        <input type="email" name="email"  required  pattern=""/>
+    </label>
+    <label>
+        <h3>Пароль</h3>
+        <input type="password" name="password"  required  pattern=""/>
+    </label>
+    <label>
+        <h3>Пароль ще раз</h3>
+        <input type="password" name="repassword"  required  pattern=""/>
+    </label>
+    <div class="radio">
+        <h3>Стать</h3>
+        <div>
+            <label>
+                <input name="name" type="radio">
+                <h3>Жіноча</h3>
+            </label>
+            <label>
+                <input name="name" type="radio">
+                <h3>Чоловіча</h3>
+            </label>    
+        </div>
+    </div>
+    <label>
+        <h3>Вік</h3>
+        <input type="number" name="age"  min="10" required  pattern=""/>
+    </label>
+    <label>
+        <h3>Курс</h3>
+    <select name="select">
+        <option>-=Виберіть курс=-</option>
+        <option>Front-End</option>
+        <option>Back-End</option>
+        <option>Project Management</option>
+        <option>QA Manual</option>
+        </select>
+    </label>
+    <label>
+        <h3>Повна адреса</h3>
+        <textarea name="message" placeholder="Країна,регіон,місто,селище,вулиця" rows="4" cols="50"></textarea>
+    </label>
+    <label class="checkbox">
+        <div>
+            <input type="checkbox" name="checkbox">
+        </div>
+        <h3>Я погоджуюсь з обробкою персональних даних</h3>
+    </label>
+    <div class="btn">
+   <button type="submit">Надіслати</button>
+   <button type="reset">Очистити форму</button>
+    </div>
+    </form>
+</body>
+</html>
