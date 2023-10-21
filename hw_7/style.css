@@ -63,6 +63,7 @@ button:hover {
 }
 footer {
     margin: 0 auto;
+    margin-left: 40px;
 }
 .logo {
     width: 200px;
