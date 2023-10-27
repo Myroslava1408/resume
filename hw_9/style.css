@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Tourney:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Francois+One&family=Staatliches&family=Tourney:ital,wght@0,300;0,400;1,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Francois+One&family=Staatliches&family=Tourney:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Farro:wght@300;400;500;700&family=Francois+One&family=PT+Sans+Narrow&family=Staatliches&family=Tourney:ital,wght@0,300;0,400;1,300;1,900&display=swap');
+.container {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.logotype, .logo, header nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    margin-right: 15px;
+    color: black;
+    font-family: 'Tourney', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 1.32px;
+}
+.h2-element {
+    color: #000;
+    font-family: 'Farro', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+.logo-container nav a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.66px;
+ }
+main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 70px;
+}
+.section-1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+}
+ .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+main .section-1 .content p {
+    color: #000;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    width: 1200px;
+    height: 133px;
+}
+.text-decoration{
+    color: #000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    text-decoration-line: underline;
+}
+.header-content {
+    display: flex;
+    width: 100%;
+}
+h2 {
+    color: #000;
+    font-family: 'Francois One', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    float: left;
+}
+main .section-2 .content p {
+    color: #000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    width: 1200px;
+    height: 230px
+}
+.section-2 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+}
+.bundles-of {
+    color: #000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 48px;
+}
+.section-3 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+}
+.text-decoration {
+    color: #000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    text-decoration-line: underline;
+}
+main .section-3 .content p {
+    color: #000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    width: 1200px;
+}
+main .section-3 .content ul {
+    color: #000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    width: 1200px;
+}
+main .section-3 .content ul li {
+    color: #000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    width: 1200px;
+}
+.first-element{
+    font-weight: bold;
+}
+.gray-background {
+    background-color: gray;
+}
+.section-4 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+}
+main .section-4 .content p {
+    color: #000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    width: 1200px;
+}
