@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.form-1 {
+    width: 600px;
+    min-height: 400px;
+    height: auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+}
+.form-2 {
+    width: 600px;
+    min-height: 400px;
+    height: 570px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+}
+h1 {
+    color: #1C1C1C;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+.form-1 label {
+    display: block;
+    margin-bottom: 15px;
+}
+.form-1 label .wrapper, .form-2 label .wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.form-1 label .title, .form-2 label .title  {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #545454;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+}
+.form-1 label .title-mail,.form-2 label .title-mail {
+    display: flex;
+    width: 500px;
+    color: #545454;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    margin-right: 34px;
+    margin-left: 36px;
+}
+.form-1 label input[type='text']{
+    display: flex;
+    width: 245px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+ .form-1 .input-row {
+    display: flex;
+    gap: 12px;
+    justify-content: center
+}
+.form-1 label input[type='email'] {
+    display: flex;
+    width: 500px;
+    height: 38px;
+    margin: 0 auto;
+} 
+.form-1 label .bottom-text, .form-2 label .bottom-text {
+    color: #969696;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    margin-right: 34px;
+    margin-left: 36px;
+}
+.form-1 label input[type='text'],.form-2 label input[type='text']:focus {
+    border: 1px solid blue;
+}
+.radio-row {
+    display: flex;
+}
+.button-radio {
+    display: inline-flex;
+    padding-right: 0px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    margin-right: 34px;
+    margin-left: 36px;
+}
+.title-radio {
+    display: flex;
+    color: #545454;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+}
+.wrapper-radio {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+.wrapper-radio input {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+.wrapper-radio .check {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 8px solid blue;
+    border-radius: 50%;
+    opacity: 0;
+}
+.wrapper-radio input:checked {
+    opacity: 0;
+  }
+  .wrapper-radio input:checked + .check {
+    opacity: 1;
+  }
+.select-row {
+    display: flex;
+    gap: 10px;
+    margin-right: 50px;
+    margin-left: 30px;
+}
+.title-select {
+    display: flex;
+    width: 245px;
+    height: 47px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 7px;
+    flex-shrink: 0;
+}
+.form-1 label .wrapper select,.form-2 label .wrapper select {
+    display: flex;
+    width: 245px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: 2px solid #E4E4E4;
+}
+
+.form-1 label .wrapper select option,.form-2 label .wrapper select option  {
+    display: flex;
+    width: 197px;
+    height: 24px;
+    padding: 1px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #545454;
+}
+button {
+    width: 500px;
+    height: 38px;
+    background: #007BFF;
+    color: #E4E4E4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-right: 34px;
+    margin-left: 36px;
+}
+.terms {
+    color: #969696;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    margin-left: 79px;
+    margin-right: 81px;
+    margin-top: 22px;
+}
+.blue {
+    color: #007BFF;
+}
+hr {
+    display: flex;
+    width: 500px;
+    height: 1px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #E4E4E4;
+}
+.user {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+}
+.user a {
+    text-decoration: none;
+}
+.input-account {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+.wrapper-icon {
+    position: relative;
+  display: inline-block;
+}
+.form-2 img {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.form-2 .input-account .wrapper-icon input[type='text'] {
+    display: flex;
+    width: 138px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: 2px solid #E4E4E4;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-right: 20px;
+}
+.form-2 .input-account .icon-camera {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 35%;
+    right: 5px;
+}
+.delete-button {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: aliceblue;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    margin: 20px 2px 2px 1px;
+}
+.delete-button .del-icon {
+    display: flex;
+    width: 16px;
+    height: 16px;
+}
+.text {
+    color: #969696;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+}
+.form-2 label input[type='text'],.form-2 label input[type='number'] {
+    display: flex;
+    width: 245px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+}
+.form-2 label input[type='email'] {
+    display: flex;
+    width: 245px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+.form-2 .input-row,.form-2 .number-input {
+    display: flex;
+    gap: 6px;
+    align-items: flex-end;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+.form-2 .input-row label,.form-2 .number-input label {
+    display: block;
+    width: 245px;
+}
+.form-2 .number-input {
+    margin-top: 20px;
+}
+.update-button {
+    display: flex;
+    width: 150px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    background-color: #007BFF;
+    color: #E4E4E4;
+}

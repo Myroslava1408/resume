@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+        <link href="./reset.css" rel="stylesheet">
+        <link href="./style.css" rel="stylesheet">
+        <title>Form</title>
+    </head>
+    <body>
+        <form class="form-1" action="#" method="get" name="main_form">
+            <h1>Create an Account</h1>
+            <div class="input-row">
+                <label>
+                    <div class="title">First Name</div>
+                    <input type="text" name="input_text" >
+                </label>
+                <label>
+                    <div class="title">Last Name</div>
+                    <div class="wrapper">
+                        <input type="text" name="input_text"> 
+                    </div>
+                </label>
+        </div>
+        <label>
+            <div class="title-mail">E-mail</div>
+            <div class="wrapper">
+             <input type="email" name="email"  required  pattern=""/>
+            </div>
+            <div class="bottom-text">We'll never share your email with anyone else.</div>
+        </label>
+        <div class="radio-row">
+                <label>
+                    <div class="button-radio">
+                        <div class="wrapper-radio">
+                            <input type="radio" name="input_radio" required />
+                            <div class="check"></div>  
+                        </div>
+                        <div class="title-radio">Male</div>
+                    </div>
+                </label>
+                <label>
+                    <div class="button-radio">
+                        <div class="wrapper-radio">
+                            <input type="radio" name="input_radio" required />
+                            <div class="check"></div>  
+                        </div>
+                        <div class="title-radio">Female</div>
+                    </div>
+                </div>
+                </label>
+                <div class="select-row">
+                        <label>
+                        <div class="title-select">Country</div>
+                        <div class="wrapper">
+                            <select name="select"  placeholder="select">
+                                <option value="value1">Select</option>
+                                <option value="value2">Value 2</option>
+                                <option value="value3">Value 3</option>
+                            </select>
+                        </div>
+                    </label>
+                    <label>
+                        <div class="title-select">City</div>
+                        <div class="wrapper">
+                            <select name="select"  placeholder="select">
+                                <option value="value1">Select</option>
+                                <option value="value2">Value 2</option>
+                                <option value="value3">Value 3</option>
+                            </select>
+                        </div>
+                    </label>
+                </div>
+            <button type="submit">Sign Up</button>
+            <div class="terms">By clicking the 'Sign Up' button, you confirm that you accept our <span class="blue">Terms of Use</span> and <span class="blue"> Privacy Policy</span>.</div>
+            <hr>
+        <div class="user">
+            <p>Have an account?</p>
+            <a href="#">Log In</a>
+        </div>
+        </form>
+        <form class="form-2" action="#" method="get" name="main_form">
+            <h1>Profile</h1>
+            <label class="input-account">
+                <img src="profile.svg" alt="photo">
+                <div class="wrapper-icon">
+                        <input type="text" name="input_text" >
+                        <img class="icon-camera" src="camera-photo.svg" alt="photo">
+                        <p class="text">Up to 1 MB (300x300 px)</p>    
+                </div>
+                <button class="delete-button">
+                    <img class="del-icon" src="del.svg" alt="photo">
+                </button>  
+            </label>
+            <div class="input-row">
+                <label>
+                    <div class="title">Name</div>
+                    <div class="wrapper">
+                        <input type="text" name="input_text">
+                    </div>
+                </label>
+                <label>
+                    <div class="title-mail">E-mail</div>
+                    <div class="wrapper">
+                     <input type="email" name="email"  required  pattern=""/>
+                    </div>
+                </label>
+        </div>
+                <div class="select-row">
+                        <label>
+                        <div class="title-select">Country</div>
+                        <div class="wrapper">
+                            <select name="select"  placeholder="select">
+                                <option value="value1">Select</option>
+                                <option value="value2">Value 2</option>
+                                <option value="value3">Value 3</option>
+                            </select>
+                        </div>
+                    </label>
+                    <label>
+                        <div class="title-select">City</div>
+                        <div class="wrapper">
+                            <select name="select"  placeholder="select">
+                                <option value="value1">Select</option>
+                                <option value="value2">Value 2</option>
+                                <option value="value3">Value 3</option>
+                            </select>
+                        </div>
+                    </label>
+                </div>
+                <div class="number-input">
+                    <label>
+                        <div class="title">Zip Code</div>
+                        <div class="wrapper">
+                            <input type="number" name="number">
+                        </div>
+                    </label>
+                    <label>
+                        <div class="title">Phone Number</div>
+                        <div class="wrapper">
+                        <input type="number" name="number"  required  pattern=""/>
+                        </div>
+                    </label>
+                </div>
+            <button type="submit" class="update-button">Update</button>
+        </form>
+    </body>
+</html>
