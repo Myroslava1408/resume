@@ -1,0 +1,223 @@
+body {
+    display: flex;
+    width: 1440px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+header,footer {
+    width: 1440px;
+    height: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+ header .logo,footer .logo {
+    display: flex;
+    width: 200px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 12.553px;
+}
+header .logo a,footer .logo a {
+    text-decoration: none;
+}
+hr {
+    width: 1440px;
+    height: 1px;
+    background: #EFEEF3;
+}
+main {
+    display: flex;
+    width: 1170px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+main .text {
+    width: 377px;
+    height: 81px;
+}
+main .text p {
+    width: 108px;
+    height: 20px;
+    flex-shrink: 0;
+    color:#7690A8;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+}
+main .text h1 {
+    width: 377px;
+    height: 46px;
+    flex-shrink: 0;
+    color: #16133D;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    margin-top: 20px;
+}
+.items {
+    display: flex;
+    gap: 30px;
+}
+.item {
+    display: flex;
+    width: 370px;
+    height: 340px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 8px;
+    border: 1px solid #E5EAF4;
+    background: #FFF;
+    gap: 30px; 
+}
+.item:hover {
+    border: 1px solid #52C29D;
+    --color-1: #E1F4F5;
+    --color-2: #CAEFF2;
+    --color-3: #F4FEFF;
+    --color-4: #CAEFF2;
+    --color-5: #E1F4F5;
+    --color-6: #E1F4F5;
+    --color-7: #52C29D;
+    stroke: #52C29D;
+    stroke-opacity: 0.5;
+}
+.items .item h2 {
+    width: 80px;
+    height: 20px;
+    color:#16133D;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.28px;
+    letter-spacing: 0.2px;
+}
+.items .item p {
+    width: 275px;
+    height: 80px;
+    color: #16133D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+.items .item a {
+    width: 90px;
+    height: 20px;
+    color: #3DB370;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+.icon-1 {
+    width: 64px;
+    height: 64px;
+    stroke: #1565D8;
+    stroke-opacity: 0.5;
+}
+.icon-2 {
+    width: 64px;
+    height: 64px;
+}
+.icon-3 {
+    width: 34px;
+    height: 46px;
+    border-radius: 16px;
+    border: 1px solid rgba(21, 101, 216, 0.10);
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-left: 17px;
+    padding-right: 13px;
+    padding-top: 17px;
+}
+:root {
+    --color-1: #D1E7FF;
+    --color-2: #D1E7FF;
+    --color-3: #E8F3FF;
+    --color-4: #B9DCFF;
+    --color-5: #D1E7FF;
+    --color-6: #D1E7FF;
+    --color-7: #B9DCFF;
+    --color-8: #007FFC;
+}
+
+svg.icon-1:hover {
+    --color-1: #E1F4F5;
+    --color-2: #CAEFF2;
+    --color-3: #F4FEFF;
+    --color-4: #CAEFF2;
+    --color-5: #E1F4F5;
+    --color-6: #E1F4F5;
+    --color-7: #52C29D;
+    stroke: #52C29D;
+    stroke-opacity: 0.5;
+}
+:root {
+    --color-1: #D1E7FF;
+    --color-2: #B9DCFF;
+    --color-3: #E8F3FF;
+    --color-4: #B9DCFF;
+    --color-5: #D1E7FF;
+    --color-6: #D1E7FF;
+    --color-7: #007FFC;
+}
+svg.icon-2:hover {
+    --color-1: #E1F4F5;
+    --color-2: #CAEFF2;
+    --color-3: #F4FEFF;
+    --color-4: #CAEFF2;
+    --color-5: #E1F4F5;
+    --color-6: #E1F4F5;
+    --color-7: #52C29D;
+}
+svg.icon-3:hover {
+    --color-1: #E1F4F5;
+    --color-2: #CAEFF2;
+    --color-3: #F4FEFF;
+    --color-4: #CAEFF2;
+    --color-5: #E1F4F5;
+    --color-6: #E1F4F5;
+    --color-7: #52C29D;
+}
+footer {
+    width: 1440px;
+    height: 193px;
+    background:#16133D;
+}
+.container {
+    display: flex;
+    width: 1170px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+footer .logo a {
+    text-decoration: none;
+    color: #E8F3FF;
+}
+.socials {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0 40px;
+}
+.instagram,.facebook,.github,.dribble,.twitter {
+    width: 20px;
+    height: 20px;
+    padding: 9px;
+    border-radius: 5px;
+    background: #EFEEF3;
+}
+
