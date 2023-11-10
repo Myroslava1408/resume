@@ -5,13 +5,13 @@
     box-sizing: border-box;
     padding: 15px;
 }
-header {
+.header {
     height: 80px;
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
 }
-header nav {
+.header nav {
     border-bottom: 1px solid #828282;
     max-width: 596px;
     width: 100%;
@@ -19,15 +19,15 @@ header nav {
     padding: 15px;
     box-sizing: border-box;
 }
-header ul {
+.header ul {
     display: flex;
     margin: 0 auto;
 }
 
-header ul li:last-child {
+.header ul li:last-child {
     margin-right: 0;
 }
-header ul li a {
+.header ul li a {
     color: #828282;
     font-family: Open Sans;
     font-size: 18px;
@@ -38,8 +38,24 @@ header ul li a {
     margin-right: 40px;
     text-decoration: none;
 }
-header ul li a:hover {
+.header ul li a:hover {
     color: #070707;
+}
+.burger {
+    width: 40px;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    left: 45px;
+    top: 20px;
+    flex-direction: column;
+    gap: 8px;
+}
+.burger span {
+    display: none;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
 }
 .first_screen {
     display: flex;
@@ -238,11 +254,9 @@ h1 {
     gap: 60px;
 }
 .bg {
-    max-width: 1440px;
     width: 100%;
     background:#F6F6F6;
     position: relative;
-    margin-left: 2310px;
 }
 .bg h2 {
     color: #000;
@@ -373,12 +387,35 @@ button {
     .container {
         margin-left: 50px;
     }
-    header {
+    .header {
         grid-template-columns: 1fr;
         margin: 0 auto;
     }
+    header.active {
+        grid-template-columns: 1fr;
+        grid-template-areas: "burger nav";
+        padding-bottom: 150px;
+    }
     nav {
+        display: none;
         grid-area: nav;
+    }
+    header.active nav {
+        display: block;
+        padding-left: 60px;
+        grid-area: nav;
+        padding-bottom: 5px;
+        border-block: none;
+    }
+    header.active nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .burger {
+        grid-area: burger;
+    }
+    .burger span {
+        display: flex;
     }
     .photo {
         max-width: 100%;
@@ -433,7 +470,7 @@ button {
     }
 }
 @media (max-width: 768px) {
-    header {
+    .header {
         grid-template-columns: 1fr; 
     }
     h1 {
@@ -445,9 +482,31 @@ button {
     .product-list {
         margin-left: 200px;
     }
+    header.active {
+        grid-template-columns: 1fr;
+        grid-template-areas: "burger nav";
+        padding-bottom: 150px;
+    }
+    nav {
+        display: none;
+        grid-area: nav;
+    }
+    header.active nav {
+        display: block;
+        padding-left: 0px;
+        padding-bottom: 5px;
+        border-block: none;
+        grid-area: nav;
+    }
+    header.active nav ul {
+        flex-direction: column;
+    }
+    .burger {
+        grid-area: burger;
+    }
 }
 @media (max-width: 1440px) {
-    header {
+    .header {
         grid-template-columns: 1fr; 
     }
     h1 {

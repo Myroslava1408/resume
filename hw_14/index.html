@@ -8,7 +8,7 @@
     <link href="./style.css" rel="stylesheet"> 
 </head>
 <body>
-<header class="container">
+<header class="container header">
 <nav>
     <ul>
         <li><a href="#first_screen">Home</a></li>
@@ -18,6 +18,11 @@
         <li><a href="#contacts">Contacts</a></li>
       </ul>    
 </nav>
+<div class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
 </header>
 <section class="first_screen">
     <div class="container"> 
@@ -133,5 +138,13 @@
         </div>
     </footer>
 </main>
+<script>
+    let burger = document.querySelector('.burger');
+    let header = document.querySelector('.header');
+    burger.addEventListener('click', function (){
+        burger.classList.toggle('active');
+        header.classList.toggle('active');
+    })
+</script>
 </body>
 </html>
