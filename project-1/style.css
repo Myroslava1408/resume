@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Farro:wght@300;400;500;700&family=Francois+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans+Narrow&family=Staatliches&family=Tourney:ital,wght@0,300;0,400;1,300;1,900&display=swap");
+body {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
 main {
   max-width: 1440px;
   width: 100%;
@@ -20,7 +26,6 @@ main {
   position: absolute;
   z-index: 1;
   top: 10px;
-  left: 231px;
   bottom: 0;
 }
 .header::before {
@@ -212,7 +217,7 @@ button:hover {
 .statistic-image {
   max-width: 570px;
   width: 100%;
-  height: 670px;
+  height: auto;
   background: linear-gradient(0deg, rgba(33, 36, 54, 0.5) 0.64%, rgba(33, 36, 54, 0) 94.04%), url(<path-to-image>), lightgray 0px -54.849px/100% 113.817% no-repeat;
   position: relative;
   z-index: 2;
@@ -569,7 +574,7 @@ button:hover {
 .promises .statistic-background {
   max-width: 770px;
   width: 100%;
-  height: 450px;
+  height: auto;
   opacity: 0.9;
   background: #FFF;
   display: grid;
@@ -1057,8 +1062,7 @@ footer .agreement a:hover::after {
 
 @media (max-width: 800px) {
   .header {
-    min-width: 1440px;
-    left: 0;
+    width: 100%;
   }
   .header nav {
     display: none;
@@ -1066,7 +1070,7 @@ footer .agreement a:hover::after {
   }
   .header .burger {
     display: flex;
-    position: fixed;
+    position: absolute;
     right: 40px;
     top: 2px;
   }
@@ -1088,23 +1092,116 @@ footer .agreement a:hover::after {
   header.active nav ul {
     flex-direction: column;
   }
-  body, html {
-    min-width: 1440px;
-    width: 100%;
-  }
-  main, .dark {
-    min-width: 1440px;
-  }
-}
-@media (max-width: 1200px) {
   body {
-    min-width: 1440px;
+    width: 100%;
+    min-width: 1036px;
+    box-sizing: border-box;
   }
-  body .container {
+  .first-screen {
+    max-width: 1037px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .section-info {
+    width: 100%;
+    min-width: 1100px;
+    overflow: hidden;
     padding: 10px;
   }
-  body .header {
-    max-width: 1440px;
+  .section-info p {
+    font-size: 15px;
+    left: 10px;
+    width: 256px;
+  }
+  .section-info button {
+    top: 63px;
+  }
+  .section-benefits {
     width: 100%;
+    max-width: 1034px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 104px;
+    padding-right: 97px;
+  }
+  .section-benefits .item {
+    max-width: 400px;
+    padding: 5px 24px;
+  }
+  .section-benefits .item p {
+    max-width: 330px;
+  }
+  .section-benefits .item h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+  .section-quote {
+    width: 100%;
+    max-width: 845px;
+  }
+  .section-quote h2 {
+    max-width: 600px;
+    font-size: 25px;
+  }
+  .section-video {
+    max-width: 729px;
+    width: 100%;
+  }
+  .promises {
+    padding: 150px;
+    margin-left: 66px;
+  }
+  .promises .statistic-background {
+    max-width: 600px;
+    width: 100%;
+    height: 400px;
+  }
+  .promises .statistic-background .button-big {
+    margin-top: 80px;
+    width: 147px;
+    height: 64px;
+  }
+  .promises .statistic-background .button-big button {
+    left: -80px;
+  }
+  .promises .statistic-background .item {
+    max-width: 100px;
+    width: 100%;
+    margin-top: -45px;
+  }
+  .promises .statistic-background .item h2 {
+    line-height: 30px;
+    font-size: 22px;
+  }
+  .promises .statistic-background .item p {
+    font-size: 11px;
+  }
+  .reviews {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .reviews .reviews-list p {
+    font-size: 13px;
+    max-width: 241px;
+    width: 100%;
+    height: auto;
+  }
+  .contact {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+  }
+  .contact form {
+    max-width: 300px;
+    width: 100%;
+    left: 604px;
+  }
+  footer {
+    left: 0;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
