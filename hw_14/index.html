@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Denis Novik</title>
+    <link href="./reset.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet"> 
+</head>
+<body>
+<header class="container header">
+<nav>
+    <ul>
+        <li><a href="#first_screen">Home</a></li>
+        <li><a href="#about_me">About me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#bg">Portfolio</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>    
+</nav>
+<div class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+</header>
+<section class="first_screen">
+    <div class="container"> 
+<h1>Denis Novik</h1>
+<img src="../hw_2/photox940.jpg" alt="photo" class="photo">
+    </div>
+</section>
+<main>
+<section class="about">
+    <div class="container">
+    <h2>About me</h2>
+    <p>Hi, I'm Denis – UX/UI designer from Minsk.I'm interested in design and everything connected with it.</p>
+    <p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
+    <p>Ready to implement excellent projects with wonderful people.</p>
+    </div>
+</section>
+<section class="skills">
+    <div class="container">
+        <div class="heading">
+        <h2>Skills</h2>
+        <p>I work in such programs as</p>
+        </div>
+    <div class="product-list">
+            <div class="ps">
+                <div class="product">
+        <img src="../hw_2/Ps.jpg" alt="photo">
+        <h3>Adobe Photoshop</h3>
+                </div>
+        <div class="rating">
+            <span class="star-icon-active">★</span>
+            <span class="star-icon-active">★</span>
+            <span class="star-icon">★</span>
+            <span class="star-icon">★</span>
+            <span class="star-icon">★</span>
+        </div>
+        </div>
+        <div class="ai">
+        <div class="product">
+        <img src="../hw_2/Ai.jpg" alt="photo">
+        <h3>Adobe Illustrator</h3>
+        </div>
+        <div class="rating">
+            <span class="star-icon-active">★</span>
+            <span class="star-icon-active">★</span>
+            <span class="star-icon-active">★</span>
+            <span class="star-icon">★</span>
+            <span class="star-icon">★</span>
+        </div>
+        </div>
+        <div class="ae">
+        <div class="product">
+        <img src="../hw_2/Ae.jpg" alt="photo">
+        <h3>Adobe After Effects</h3>
+        </div>
+            <div class="rating">
+                <span class="star-icon-active">★</span>
+                <span class="star-icon-active">★</span>
+                <span class="star-icon-active">★</span>
+                <span class="star-icon-active">★</span>
+                <span class="star-icon">★</span>
+            </div>
+        </div>
+    <div class="figma">
+    <div class="product">
+    <img src="../hw_2/Figma.jpg" alt="photo">
+    <h3>Figma</h3>
+    </div>
+        <div class="rating">
+            <span class="star-icon-active">★</span>
+            <span class="star-icon-active">★</span>
+            <span class="star-icon-active">★</span>
+            <span class="star-icon-active">★</span>
+            <span class="star-icon-active">★</span>
+        </div>
+    </div>
+    </div>
+</div>    
+</section>
+<section class="bg">
+    <div class="container">
+<h2>Portfolio</h2>
+    <div class="pages">
+        <img src="../hw_2/Fashion-Store.jpg" alt="photo">
+        <p>Online fashion store - Homepage</p>
+        <img src="../hw_2/reebok_web.jpg" alt="photo">
+        <p>Reebok Store - Concept</p>
+        <img src="../hw_2/braun-landing.jpg" alt="photo">
+        <p>Braun Landing Page - Concept</p>
+    </div>
+    </div>
+</section>
+    <footer class="contacts">
+        <div class="container">
+                <h2>Contacts</h2>
+                <h3>Want to know more or just chat? You are welcome!</h3>
+                <button name="button"><span class ="text-button">Send message</span></button>
+                    <div class="social-group">
+                                <a href="https://www.linkedin.com"target="_blank">
+                                    <img src="../hw_2/Vector.jpg" alt="linkedin">
+                                </a>
+                                <a href="https://www.instagram.com"target="_blank">
+                                    <img src="../hw_2/instagram.jpg" alt="instagram">
+                                </a>
+                                <a href="https://www.behance.net/"target="_blank">
+                                    <img src="../hw_2/behance.jpg" alt="behance">
+                                </a>
+                                <a href="https://dribbble.com/"target="_blank">
+                                    <img src="../hw_2/dribbble.jpg" alt="dribbble">
+                                </a>   
+                        </div>
+                <h4>Like me on LinkedIn, Instagram, Behance, Dribble</h4>
+            </div>
+        </div>
+    </footer>
+</main>
+<script>
+    let burger = document.querySelector('.burger');
+    let header = document.querySelector('.header');
+    burger.addEventListener('click', function (){
+        burger.classList.toggle('active');
+        header.classList.toggle('active');
+    })
+</script>
+</body>
+</html>
