@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Farro:wght@300;400;500;700&family=Francois+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans+Narrow&family=Staatliches&family=Tourney:ital,wght@0,300;0,400;1,300;1,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 auto;
   display: flex;
@@ -15,6 +19,7 @@ main {
   margin: 0 auto;
   width: 100%;
   max-width: 1170px;
+  padding: 0 15px;
 }
 
 .header {
@@ -422,32 +427,35 @@ button:hover {
 }
 
 .section-quote {
-  max-width: 1170px;
-  width: 100%;
-  height: 400px;
   background-image: url(./images/quote-background.png);
-  margin: 120px 135px;
+  min-height: 400px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
 }
-.section-quote img {
-  width: 102px;
-  height: 84px;
-  margin: 70px 0 246px 100px;
+.section-quote .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
-.section-quote h2 {
+.section-quote .wrapper h2 {
   max-width: 710px;
   width: 100%;
-  height: 140px;
   color: #FFF;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: 46px;
   letter-spacing: 1.28px;
-  margin-top: -291px;
-  margin-left: 162px;
+  position: relative;
 }
-.section-quote h3 {
+.section-quote .wrapper h2 img {
+  position: absolute;
+  top: -30px;
+  left: -60px;
+}
+.section-quote .wrapper h3 {
   color: #FFF;
   font-family: "Playfair Display";
   font-size: 20px;
@@ -455,9 +463,6 @@ button:hover {
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 1.6px;
-  width: 497px;
-  margin-top: 40px;
-  margin-left: 164px;
 }
 
 .section-video {
@@ -1091,11 +1096,6 @@ footer .agreement a:hover::after {
   }
   header.active nav ul {
     flex-direction: column;
-  }
-  body {
-    width: 100%;
-    min-width: 1036px;
-    box-sizing: border-box;
   }
   .first-screen {
     max-width: 1037px;
