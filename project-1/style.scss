@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Farro:wght@300;400;500;700&family=Francois+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans+Narrow&family=Staatliches&family=Tourney:ital,wght@0,300;0,400;1,300;1,900&display=swap');
 $base-font-family:'Lato', sans-serif;
+* {
+    box-sizing: border-box;
+}
 body {
-    padding-left: 25px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 main {
     max-width: 1440px;
@@ -12,7 +17,7 @@ main {
     margin: 0 auto;
     width: 100%;
     max-width: 1170px;
-    padding-right: 10px;
+    padding: 0 15px;
 }
 .header {
     max-width: 1440px;
@@ -23,7 +28,6 @@ main {
     position: absolute;
     z-index: 1; 
     top: 10px;
-    left: 29px;
     bottom: 0;
     &::before {
     content: '';
@@ -52,18 +56,19 @@ main {
     }
 }
 }
+header.active {
+    nav {
+        background-color: #E4E4E4;
+    }
+}
 .header-content {
     display: flex;
     max-width: 1170px;
     width: 100%;
     justify-content: space-between;
-    margin-left: 70px;
     align-items: center;
     position: relative;
     z-index: 2;
-}
-.logo {
-    margin-left: -70px;
 }
 nav {
     display: flex;
@@ -86,16 +91,22 @@ a {
     line-height: 24px;
     letter-spacing: 1.12px;
 }
-a:hover::after {
-    content: "";
-    position: absolute;
-    width: 44px;
-    height: 3px;
-    right: 455px;
-    bottom: 1px;
-    opacity: 0.3;
-    background: #F1897B;
+
+.header-content a {
+    position: relative;
 }
+
+.header-content a:hover::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #F1897B;
+    transition: all 0.3s;
+    opacity: 0.3;
+}
+
 .first-screen {
     max-width: 1440px;
     width: 100%;
@@ -105,14 +116,16 @@ a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/images/first-screen-image.png');
+    background-image: url('./images/first-screen-image.png');
 }
 .first-screen-content {
-    width: 523px;
+    max-width: 523px;
+    width: 100%;
     height: 302px;
     display: inline;
     position: absolute;
-    top: 260px;
+    margin-bottom: 466px;
+    margin-top: 260px;
     left: 135px;
     h1 {
         color: #262A3F;
@@ -190,39 +203,31 @@ button:hover {
     max-width: 1170px;
     width: 100%;
     height: 670px;
+    padding-left: 135px;
+    top: 684px;
+    box-sizing: border-box;
     position: absolute;
     z-index: 1;
-    top: 712px;
-    bottom: 0;
-    left: -103px;
-    right: 135px;
-    margin: 0 auto;
-    svg {
-        width: 1439.438px;
-        height: 825.75px;
-        background: linear-gradient(183deg, rgba(255, 255, 255, 0.00) 46.73%, #FFF 63.21%);
-    }
 }
 .statistic-image {
     max-width: 570px;
     width: 100%;
-    height: 670px;
+    height: auto;
     background: linear-gradient(0deg, rgba(33, 36, 54, 0.50) 0.64%, rgba(33, 36, 54, 0.00) 94.04%), url(<path-to-image>), lightgray 0px -54.849px / 100% 113.817% no-repeat;
     position: relative;
     z-index: 2;
-    top: 154px;
-    left: 100px;
 }
 .statistic-background {
     max-width: 770px;
     width: 100%;
     height: 580px;
     opacity: 0.9;
+    box-sizing: border-box;
     background: #FFF;
-    position: relative;
+    position: absolute;
     z-index: 3;
-    top: -461px;
-    left: 490px;
+    top: 57px;
+    left: 392px;
     .button-big {
         button {
             left: 0px;
@@ -366,10 +371,9 @@ button:hover {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    padding-top: 440px;
     max-width: 1440px;
-    max-height: 5415px;
     width: 100%;
-    margin-top: 555px;
     margin-left: 40px;
     grid-column-gap: 90px;
     .item {
@@ -411,30 +415,31 @@ button:hover {
     }
 }
 .section-quote {
-    max-width: 1170px;
-    width: 100%;
-    height: 400px;
-    margin-left: 198px;
-    margin-top: 190px;
-    background-image: url(/images/quote-background.png);
-    img {
-        width: 102px;
-        height: 84px;
-        margin: 70px 0 246px 100px;
-    }
+    background-image: url(./images/quote-background.png);
+    min-height: 400px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
     h2 {
         max-width: 710px;
-        width:100%;
-        height: 140px;
+        width: 100%;
         color: #FFF;
-        font-family: $base-font-family;
+        font-family: 'Lato';
         font-size: 32px;
         font-style: normal;
         font-weight: 400;
         line-height: 46px;
         letter-spacing: 1.28px;
-        margin-top: -291px;
-        margin-left: 162px;
+        position: relative;
+        img {
+            position: absolute;
+            top: -30px;
+            left: -60px;
+        }
     }
     h3 {
         color: #FFF;
@@ -444,17 +449,14 @@ button:hover {
         font-weight: 400;
         line-height: 20px;
         letter-spacing: 1.6px;
-        width: 497px;
-        margin-top: 40px;
-        margin-left: 164px;
     }
 }
+}
 .section-video {
-    max-width: 1440px;
+    max-width: 970px;
     width:100%;
-    height: 5415px;
     position: relative;
-    right: 60px;
+    margin: 45px auto;
     .tablet {
         max-width: 970px;
         width: 100%;
@@ -463,8 +465,6 @@ button:hover {
         border: 1px solid #E4E4E4;
         position: relative;
         z-index: 5;
-        left: 230px;
-        top: 122px;
         .tablet-button {
             width: 35px;
             height: 35px;
@@ -473,7 +473,7 @@ button:hover {
             top: 212px;
             bottom: 0;
             right: 0;
-            left: 791px;
+            left: 778px;
             background-color: #FFF;
         }
         .tablet-dynamic {
@@ -521,8 +521,7 @@ button:hover {
     align-items: flex-start;
     gap: 20px;
     position: relative;
-    top: 160px;
-    left: 240px;
+    margin-top: 50px;
     h2 {
         width: 897px;
         height: 54px;
@@ -555,24 +554,25 @@ button:hover {
 .promises {
     max-width: 1440px;
     width: 100%;
-    height: 5415px;
+    max-height: 600px;
     position: relative;
-    bottom: 4526px;
+    padding-top: 50px;
     .statistic-image {
         max-width: 600px;
         width: 100%;
-        height: auto;
+        max-height: 540px;
     }
     .statistic-background {
         max-width: 770px;
         width: 100%;
-        height: 450px;
+        height: auto;
         opacity: 0.9;
         background: #FFF;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 75px 70px;
-        position: relative;
+        grid-template-columns: 1fr 323px;
+        padding: 14px 77px;
+        position: absolute;
+        top: 90px;
         column-gap: 50px;
     }
     .item {
@@ -620,13 +620,13 @@ button:hover {
     max-width: 1440px;
     width: 100%;
     position: relative;
-    top: -9130px;
-    left: 100px;
+    padding-top: 120px;
+    padding-bottom: 100px;
     .reviews-text {
         max-width: 400px;
         width: 100%;
         height: 120px;
-        padding-bottom: 50px;
+        padding-bottom: 160px;
         h2 {
             color:  #262A3F;
             font-family: 'Playfair Display';
@@ -688,7 +688,6 @@ button:hover {
             font-weight: 400;
             line-height: 26px;
             opacity: 0.8;
-            max-width: 290px;
             width: 100%;
             height: 234px;
             padding: 35px;
@@ -699,7 +698,7 @@ button:hover {
             font-size: 20px;
             font-style: italic;
             font-weight: 400;
-            line-height: 20px;
+            line-height: 130px;
             letter-spacing: 1.6px;
             padding-left: 20px;
         }
@@ -708,11 +707,11 @@ button:hover {
 }
 .contact {
     max-width: 1170px;
+    padding-bottom: 100px;
     width: 100%;
-    height: 240px;
+    height: 300px;
     position: relative;
-    top: -8955px;
-    left: 233px;
+    left: 130px;
     &::before {
         content: "";
             display: block;
@@ -817,8 +816,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top: -8842px;
-    left: 240px;
+    left: 130px;
     &::before {
         content: "";
             display: block;
@@ -889,7 +887,6 @@ footer {
     background: #161926;
     margin: 0 auto;
     .header {
-        top: 50px;
         background: linear-gradient(270deg, rgba(22, 25, 38, 0.50) 100%, rgba(22, 25, 38, 0.00) 24.1%, rgba(22, 25, 38, 0.00) 47.19%), rgba(22, 25, 38, 0.02);
         backdrop-filter: blur(4.5px);
         .header-content {
@@ -901,12 +898,22 @@ footer {
                 background: linear-gradient(97deg, #53F3CD 6.73%, rgba(83, 243, 205, 0.00) 116.9%);
             }
         }
+        .burger {
+            span {
+                background-color: #FFF;
+            }
+           
+        }
+    }
+    header.active {
+        nav {
+            background-color: #161926;
+        }
     }
     .first-screen {
-        background-image: url('/images/first-screen-black.png');
+        background-image: url('./images/first-screen-black.png');
     }
     .first-screen {
-        top: -78px;
         h1 {
             color: #FFF;
             .green-text {
@@ -926,19 +933,13 @@ footer {
             color: #02E0AB;
         }
     }
-    .section-info {
-        position: relative;
-        top: -440px;
-        .statistic-image {
-            background-image: url(/images/statistic-image.png);
-            img {
-                
-            }
+    .section-info {   
+      .statistic-image {
+            background-image: url(./images/statistic-image.png);
         }
         .statistic-background {
             opacity: 0.9;
             background: #161926;
-            max-width: 100%;
             .info-list {
                 .list-item {
                     h2 {
@@ -967,7 +968,6 @@ footer {
         }
     }
     .section-benefits {
-        margin-top: -100px;
         .item {
             border-top: 1px solid #515773;
             h2 {
@@ -982,20 +982,18 @@ footer {
         }
     }
     .section-quote {
-        margin-left: 120px;
         img {
-            content: url('/images/quote-icon-green.png');
+            content: url('./images/quote-icon-green.png');
         }
     }
     .section-video {
-        right: 103px;
         .tablet {
             border: 1px solid #515773;
             .tablet-button {
                 background-color: #161926  
             }
             .tablet-dynamic {
-                    content: url('/images/Ellipse\ 20-dark.png')
+                    content: url('./images/Ellipse\ 20-dark.png')
             }
             .screen-video {
                 border-radius: 8px;
@@ -1017,7 +1015,6 @@ footer {
     }
     .promises {
         .statistic-background {
-            max-width: 626px;
             opacity: 0.9;
             background: #161926;
             .item {
@@ -1097,235 +1094,152 @@ footer {
  
 }
 @media (max-width: 800px) {
-    main,.dark {
-        padding-right: 400px;
-    
     .header {
-        padding-left: 330px;
+        width: 100%;
         nav {
             display: none;
             position: absolute;
         }
         .burger {
             display: flex;
-            position: relative;
-            left: 251px;
+            position: absolute;
+            right: 40px;
+            top: 2px;
         }
         .logo {
             position: absolute;
-            left: -274px;
-            top: 23px;
-
         }
-    }
+    } 
     header.active {
-        top: 15px;
-        background: none;
-        &::before {
-            background: none;
-        }
+        top: 10px;
         nav {
             display: flex;
             position: fixed;
-            left: 546px;
-            top: 15px;
+            right: 26px;
+            top: 83px;
+            padding: 47px;
+            max-width: 277px;
+            width: 100%;
             ul {
                 flex-direction: column;
             }
         }
-        .burger {
-            display: none;
-        }
-        .logo {
-            top: -10px;
-        }
     }
     .first-screen {
-        padding-left: 670px;
-        .first-screen-content {
-            width: 370px;
-            left: 60px;
-            button {
-                margin-top: 0;
-            }
-        }
+        max-width: 1037px; 
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
     }
     .section-info {
-        top: -552px;
-        left: -29px;
-        .statistic-image {
-            img {
-                width : 100%;
-                height : 100%;
-            }
+        width: 100%;
+        min-width: 1100px;
+        overflow: hidden;
+        padding: 10px;
+        p {
+            font-size: 15px;
+            left: 10px;
+            width: 256px;
         }
-        .statistic-background {
-            top: -356px;
-            height: 300px;
-            left: 300px;
-            .info-list {
-                max-width: 179px;
-                .list-item {
-                margin-top: 0;
-                gap: 0;
-                h2 {
-                    font-size: 20px;
-                    line-height: 48px;
-                }
-                &:first-child p::after,
-                &:nth-child(2) p::after {
-                     top: 40px;
-        }
-            }
-            }
-            .info-text {
-                top: -320px;
-                left: 185px;
-                max-width: 225px;
-                p {
-                    font-size: 12px;
-                }
-            }
+        button {
+            top: 63px;
         }
     }
     .section-benefits {
-        margin-top: -304px;
+        width: 100%;
+        max-width: 1034px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding-left: 104px;
+        padding-right: 97px;
         .item {
-            max-width: 150px;
-            gap: 0;
-            h2 {
-                width: 200px;
-                font-size: 20px;
-                font-size: 20px;
-                .green-text {
-                    font-size: 20px;
-                    line-height: 26px;
-                }
-            }
+            max-width: 400px;
+            padding: 5px 24px;
             p {
-                width: 195px;
-                height: auto;
+                max-width: 330px;
+            }
+            h2 {
+                font-size: 26px;
+                text-align: center;
             }
         }
     }
     .section-quote {
-        margin-left: 26px;
-        padding-right: 446px;
-        max-width: 207px;
-        h2 {
-            font-size: 17px;
-            line-height: 29px;
-        }
+       width: 100%;
+       max-width: 845px;
+       h2 {
+        max-width: 600px;
+        font-size: 25px;
+       }
     }
     .section-video {
-        .tablet {
-            left: 139px;
-            width: 621px;
-            video {
-                width: 539px;
-            }
-            .screen-video {
-                width: 539px;
-            }
-            .play-button {
-                left: 253px;
-            }
-            .tablet-button {
-                left: 455px;
-            }
-        }
-        .video-text {
-            left: 164px;
-            h2 {
-                font-size: 33px;
-            }
-            p {
-
-            }
-        }
+        max-width: 729px;
+        width: 100%;
     }
     .promises {
-        .statistic-image {
-            left: 1px;
-        }
+        padding: 150px;
+        margin-left: 66px;
         .statistic-background {
-            left: 240px;
-            .item {
-                width: 120px;
-                h2 {
-                    font-size: 18px;
-                }
-                p {
-                    font-size: 12px;
+            max-width: 600px;
+            width: 100%;
+            height: 400px;
+            .button-big {
+                margin-top: 80px;
+                width: 147px;
+                height: 64px;
+                button {
+                    left: -80px;
                 }
             }
-            .button-big {
-                width: 200px;
-                margin-top: 60px;
-               button {
-                left: -43px;
-               } 
+            .item {
+                max-width: 100px;
+                width: 100%;
+                margin-top: -45px;
+                h2 {
+                    line-height: 30px;
+                    font-size: 22px;
+                }
+                p {
+                    font-size: 11px;
+                }
             }
         }
     }
     .reviews {
+        max-width: 900px;
+        margin: 0 auto;
         .reviews-list {
-            width: 500px;
-            .overlay-1 {
-                width: 174px;
-            }
-            .overlay-2 {
-                width: 174px;
-            }
-            .overlay-3 {
-                width: 174px;
-            }
-            p {
-                padding: 14px;
-                line-height: 14px;
-                font-size: 15px;
-            }
+        p {
+            font-size: 13px;
+            max-width: 241px;
+            width: 100%;
+            height: auto;
         }
+    }
+    
     }
     .contact {
-        .contact-text {
-            margin-left: -119px;
-            h2 {
-                font-size: 20px;
-                .green-text {
-                    font-size: 20px;
-                }
-            }
-            p {
-                font-size: 15px;
-                width: 240px;
-                margin-top: 15px;
-            }
-        }
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
         form {
-            left: 173px;
-            top: -121px;
+            max-width: 300px;
+            width: 100%;
+            left: 604px;
         }
     }
-        
-        footer {
-            width: 579px;
-            left: 86px;
-            .copyright {
-                margin-left: -43px;
-                gap: 75px;
-                font-size: 12px;
-            }
-            .made {
-                font-size: 12px;
-            }
-            .agreement {
-                font-size: 12px;
-            }
-        }
+    footer {
+        left: 0;
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
+
+
+   
 
 
  
