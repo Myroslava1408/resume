@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Monticello</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <link href="./style.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+        <script src="read-more.min.js"></script>
+    </head>
+    <body>
+      <header class="header">
+          <a class="logo" href="#">
+            <img src="img/logotype.png" alt="logo">
+          </a>
+          <nav>
+            <ul>
+              <li>
+                <a class="active" href="#section1">About us</a>
+              </li>
+              <li>
+                <a href="#section2">Projects</a>
+              </li>
+              <li>
+                <a href="#section3">News</a>
+              </li>
+              <li>
+                <a href="#section4">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="social">
+            <a class="icon" href="https://www.facebook.com/">
+              <img src="img/faceb.png" alt="icon">
+            </a>
+            <a class="icon" href="https://www.twitter.com/">
+              <img src="img/twit.png" alt="icon">
+            </a>
+            <a class="icon" href="https://www.instagram.com/">
+              <img src="img/inst.png" alt="icon">
+            </a>
+          </div>
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      </header>
+      <main>
+        <section id="section1" class = "main">
+        <div class="swiper main-slider">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="content">
+              <img src="img/headerbg.png" alt="photo">
+              <h2>SIMPLE & MODERN</h2>
+              <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content">
+            <img src="img/headerbg.png" alt="photo">
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="content">
+          <img src="img/headerbg.png" alt="photo">
+        </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="content">
+          <img src="img/headerbg.png" alt="photo">
+          </div>
+          </div>
+          <div class="swiper-slide"> 
+            <div class="content">
+            <img src="img/headerbg.png" alt="photo">
+          </div>
+          </div>
+        </div>
+        <div class="swiper-pagination slider-main-pagination"></div>
+        <div class="swiper-button-next slider-button"></div>
+      </div>
+        </section>
+        <section id="section2" class="projects">
+          <h2>What we do</h2>
+          <div class="project-1">
+            <div class="title">
+              <span>One world</span>
+              <h3>Trade center</h3>
+              <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+              <a class="more" href="#">More details</a>
+              <div class="location">
+                <img src="img/location.png" alt="logotype">
+                <p>New York City, United States - 1776 feet</p>
+              </div>
+            </div>
+            <div class="photos">
+              <img class="projects-photo" src="img/project1.jpg" alt="photo">
+              <img class="projects-background" src="img/bg-projects1.png" alt="photo">
+            </div>
+          </div>
+          <div class="project-2">
+            <div class="title">
+              <span>international</span>
+              <h3>Commerce centre</h3>
+              <p>Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+              <a class="more" href="#">More details</a>
+              <div class="location">
+                <img src="img/location.png" alt="logotype">
+                <p>Hong Kong - 1588 feet</p>
+              </div>
+            </div>
+            <div class="photos">
+              <img class="projects-photo" src="img/project2.png" alt="photo">
+              <img class="projects-background" src="img/bg-projects2.png" alt="photo">
+            </div>
+          </div>
+        </section>
+        <section id="section3" class ="news">
+          <div class="news-container">
+            <div class="title-news">
+              <h2>LATEST NEWS</h2>
+            </div>
+          <div class ="swiper news-slider container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/slide1.png" alt="photo">
+                <h3>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                <p>Free directories: directories are perfect for customers that are searching for...</p>
+                <div class="author">
+                  <img src="img/elipse1.png" alt="photo">
+                  <div class="author-content">
+                  <span>ALJA BRUN</span>
+                  <span class="blue">20 Jan 2020</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slide2.png" alt="photo">
+                <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
+                <p>Having a home based business is a wonderful asset to your life...</p>
+                <div class="author">
+                  <img src="img/elipse2.png" alt="photo">
+                  <div class="author-content">
+                  <span>DOMINIC FREEMAN</span>
+                  <span class="blue">13 Dec 2019</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slide3.png" alt="photo">
+                <h3>HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                <p>There are many things that are important to catalog design...</p>
+                <div class="author">
+                  <img src="img/elipse3.png" alt="photo">
+                  <div class="author-content">
+                  <span>ALICE WARD</span>
+                  <span class="blue">30 Nov 2019</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+          </div>
+          <div class="swiper-pagination slider-news-pagination"></div>
+          <div class="swiper-button-prev slider-news-button-prev"></div>
+          <div class="swiper-button-next slider-news-button-next"></div>
+        </div>
+        </section>
+        <section  class="gallery">
+          <div class="title-gallery">
+            <h2>Gallery</h2>
+          </div>
+          <div class="items container">
+            <div class="item" data-fancybox="gallery" data-src="img/gallery1.png">
+              <img src="img/gallery1.png" alt="photo">
+              <a id="zoomLink"href="img/gallery1.png">
+                <img class="zoom" src="img/gallery-icon.png"/>
+              </a>
+            </div>
+            <div class="item" data-fancybox="gallery" data-src="img/gallery2.png"><img src="img/gallery2.png" alt="photo"></div>
+            <div class="item"><img src="img/gallery3.png" data-fancybox="gallery" alt="photo"></div>
+            <div class="item"><img src="img/gallery4.png" data-fancybox="gallery" alt="photo"></div>
+            <div class="item"><img src="img/gallery5.png" data-fancybox="gallery" alt="photo"></div>
+          </div>
+        </section>
+        <section id="section4" class="map">
+          <div id = "map">
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3bzwW_R3EMgupzOSDqdgxNGYcYyAAQpI&callback=initMap"></script>
+          </div>
+          <div class="form">
+            <div class="form-title">
+            <h3>Get in touch</h3>
+          </div>
+          <div class="contacts-wrapper">
+            <div class="contacts">
+              <ul>
+                <li>
+                  <img src="img/contacts1.png" alt="location">
+                  91 Nolan Extensions Suite 670
+                </li>
+                <li>
+                  <img src="img/contacts2.png" alt="telephone">
+                  +001 356-868-2454
+                </li>
+                <li>
+                  <img src="img/contacts3.png" alt="email">
+                  montichello@service.com
+                </li>
+                <li>
+                  <img src="img/contacts4.png" alt="timeline">
+                  07:05AM to 19:30PM
+                </li>
+              </ul>
+            </div>
+              <form class="contacts-form" action="#" method="GET">
+                <input
+                  class="contacts-name"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  value="Mollie Medina"
+                />
+                <input
+                class="contacts-email"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                />
+                <input
+                class="contacts-button"
+                type="submit"
+                value="Submit"
+              />
+              </form>
+          </div>
+        </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-wrapper container">
+            <div class="footer-content">
+            <a class="logo" href="#">
+              <img src="img/logotype.png" alt="logo">
+            </a>
+            <span>Copyrights © 2020 Montichello</span>
+          </div>
+          <div class="social">
+            <a class="icon" href="https://www.facebook.com/">
+              <img src="img/faceb.png" alt="icon">
+            </a>
+            <a class="icon" href="https://www.twitter.com/">
+              <img src="img/twit.png" alt="icon">
+            </a>
+            <a class="icon" href="https://www.instagram.com/">
+              <img src="img/inst.png" alt="icon">
+            </a>
+          </div>
+    </div>
+      </footer>
+      <script src="script.js"></script>
+    </body>
+</html>
