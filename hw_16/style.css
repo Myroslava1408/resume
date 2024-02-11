@@ -1,0 +1,75 @@
+
+  .deck {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 60px;
+    height: 100vh;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .card,.card-red {
+    width: 100px;
+    height: 150px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
+  }
+  .card-red {
+    color: red;
+  }
+
+  .card:hover,.card-red:hover {
+    transform: rotateY(180deg);
+  }
+
+  .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+  }
+  .rank-left {
+    font-size: 24px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  .rank-right {
+    font-size: 24px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    transform: scaleY(-1);
+  }
+
+  .suit {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+
+  .small-suit-right {
+    font-size: 16px;
+    position: absolute;
+    bottom: 30px;
+    right: 5px;
+  }
+  .small-suit-left {
+    font-size: 16px;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+  }
+  .back {
+    transform: rotateY(180deg);
+    border: 1px solid black;
+    border-radius: 8px;
+  }
